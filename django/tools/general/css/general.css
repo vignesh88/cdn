@@ -1,0 +1,73 @@
+/* https://codepen.io/dev_loop/pen/vYYxvbz */
+
+.avatar {
+    position: relative;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 501;
+  }
+
+ 
+ 
+  .button_custom2 {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.1em 0.1em 0;
+    border: 0.16em solid rgba(255, 255, 255, 0);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    text-align: center;
+    transition: all 0.2s;
+ }
+  .button_custom2:hover {
+    border-color: rgba(255, 255, 255, 1);
+ }
+  @media all and (max-width: 30em) {
+    .button_custom2 {
+      display: block;
+      margin: 0.2em auto;
+   }
+ }
+  
+  
+
+ .bouncy {
+  animation: bouncy 5s infinite linear;
+  position: relative;
+}
+@keyframes bouncy {
+  0% {
+    top: 0em;
+ }
+  40% {
+    top: 0em;
+ }
+  43% {
+    top: -0.9em;
+ }
+  46% {
+    top: 0em;
+ }
+  48% {
+    top: -0.4em;
+ }
+  50% {
+    top: 0em;
+ }
+  100% {
+    top: 0em;
+ }
+}
+
+  
+  
+.darkmode-layer, .darkmode-toggle {
+  z-index: 500;
+}
