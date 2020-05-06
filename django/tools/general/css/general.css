@@ -28,6 +28,8 @@
  }
   .button_custom2:hover {
     border-color: rgba(255, 255, 255, 1);
+    color: rgb(5, 5, 5);
+
  }
   @media all and (max-width: 30em) {
     .button_custom2 {
@@ -66,7 +68,17 @@
  }
 }
 
-  
+footer {
+  background: lightblue;
+  text-align: center;
+  padding: 8px;
+  /*you could also get rid of the .wrapper justify-content and use margin-top: auto*/
+   /* position: absolute; */
+   color: #333333;
+   position: relative;
+  background-color: #efefef;
+  text-align: center;
+}
   
 .darkmode-layer, .darkmode-toggle {
   z-index: 500;

@@ -1,21 +1,20 @@
 #page-content-wrapper {
-  background-color: #F8F9FA;
+  /* background-color: #F6F6F7; */
+  background-color: #FFFFFF;
 }
-
 button {
   border: 0;
   outline: 0;
 }
-
 .container_1 {
-  margin: 40px 0;
+  margin: 20px 0;
   /* width: 400px; */
   width: 100%;
   /* height: 600px; */
   height: 100%;
   padding: 10px 25px;
   /* background: #E8E8E8; */
-  background: rgb(255, 255, 255);
+  background: #F6F6F7;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.45), 0 4px 8px rgba(0, 0, 0, 0.35), 0 8px 12px rgba(0, 0, 0, 0.15);
   /* font-family: "Montserrat"; */
@@ -26,6 +25,7 @@ button {
   margin: 10px -5px;
   margin-bottom: 30px;
   color: #333333;
+  text-align:center;
 }
 
 .result {
@@ -281,7 +281,8 @@ button {
   border-radius: 8px;
   color: #fff;
   border: none;
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  background-color: #0069D9;
   letter-spacing: 1px;
   font-weight: bold;
   text-transform: uppercase;
@@ -292,6 +293,12 @@ button {
 .btn.generate:active {
   transform: translateY(-3%);
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.08);
+}
+
+.btn.generate:hover {
+  background-color: #ddd;
+  color: black;
+
 }
 
 .support {
@@ -345,6 +352,7 @@ a:hover {
   }
 }
 
-.darkmode-layer, .darkmode-toggle {
+.darkmode-layer,
+.darkmode-toggle {
   z-index: 500;
 }
