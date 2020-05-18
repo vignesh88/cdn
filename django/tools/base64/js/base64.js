@@ -1,4 +1,5 @@
 function base64_convert() {
+    var csrftoken = Cookies.get('csrftoken');
     var input_value = document.getElementById("default_input_data").value;
     if (document.getElementById('base64_decode').checked) {
         var input_type = "base64decode";
@@ -7,7 +8,8 @@ function base64_convert() {
     }
     var dataString = '&input_value=' + input_value + '&input_type=' + input_type;
     $.ajax({
-        type: "GET",
+        headers: { "X-CSRFToken": csrftoken },
+        type: "POST",
         url: "/base64.html",
         data: dataString,
         success: function (response) {
@@ -19,8 +21,14 @@ function base64_convert() {
 }
 
 function base64_convert_enterkey(e) {
-    //See notes about 'which' and 'key'
     if (e.keyCode == 13) {
         base64_convert();
     }
 }
+
+$(document).ready((function () {
+    $("#slow_loading").hide(), $("#slow_loading").delay(100).fadeIn(1000) 
+}));
+
+
+
