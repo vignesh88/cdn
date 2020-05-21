@@ -69,10 +69,10 @@ footer {
 }
 
 #dark-mode-toggle-9 {
-  --dark-mode-toggle-dark-icon:url('{% static "common/img/sun.svg" %}');
-  --dark-mode-toggle-light-icon:url('{% static "common/img/moon.svg" %}');
+  --dark-mode-toggle-dark-icon:url(https://cdn.jsdelivr.net/gh/vignesh88/cdn/django/tools/common/img/sun.svg);
+  --dark-mode-toggle-light-icon:url(https://cdn.jsdelivr.net/gh/vignesh88/cdn/django/tools/common/img/moon.svg);
   --dark-mode-toggle-icon-size: 2rem;
   --dark-mode-toggle-icon-filter: invert(100%);
-  --dark-mode-toggle-checkbox-icon:var(--dark-mode-toggle-light-icon, url('{% static "common/img/moon.svg" %}'));
-  --dark-mode-toggle-checkbox-icon:var(--dark-mode-toggle-dark-icon, url('{% static "common/img/sun.svg" %}'))
+  --dark-mode-toggle-checkbox-icon:var(--dark-mode-toggle-light-icon, url(https://cdn.jsdelivr.net/gh/vignesh88/cdn/django/tools/common/img/moon.svg));
+  --dark-mode-toggle-checkbox-icon:var(--dark-mode-toggle-dark-icon, url(https://cdn.jsdelivr.net/gh/vignesh88/cdn/django/tools/common/img/sun.svg)
 }
